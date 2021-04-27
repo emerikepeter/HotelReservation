@@ -55,7 +55,7 @@ namespace HotelReservation.Controllers
                     _context.Tbl_Reservation.Add(formData);
                     await _context.SaveChangesAsync();
                     ModelState.Clear();
-                    ViewBag.Message = "Reservation book successfully";
+                    ViewBag.Message = "Reservation booked successfully";
 
                     return View();
                 }
